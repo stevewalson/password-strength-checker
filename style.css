@@ -5,52 +5,50 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   height: 100vh;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
 }
-
-.container{
+.container {
   min-height: calc(100% - 60px);
   width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- gap:2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
-.heading{
-  font-size: clamp(35px,3rem,4vw);
+.heading {
+  font-size: clamp(35px, 3rem, 4vw);
   padding: 0;
   margin: 0;
   margin-bottom: 4rem;
   text-align: center;
 }
-.password_wrapper{
-  width: min(90%,800px);
+.password_wrapper {
+  width: min(90%, 800px);
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
 }
-.password_input{
+.password_input {
   display: flex;
-  box-shadow: 10px 10px 14px #00000010 , 5px 5px 8px #00000003;
+  box-shadow: 10px 10px 14px #00000010, 5px 5px 8px #00000003;
 }
-.password{
+.password {
   width: 100%;
-  font-size: clamp(35px,4rem,5vw);
+  font-size: clamp(35px, 4rem, 5vw);
   border: none;
   outline: none;
   padding: 1rem 0.8rem;
 }
-.strength_text{
+.strength_text {
   text-align: center;
-  font-size: clamp(30px,2.6rem,3vw);
+  font-size: clamp(30px, 2.6rem, 3vw);
 }
-.copy{
+.copy {
   border: none;
   padding: 0 1.3rem;
   background-color: #d9dae6;
@@ -60,18 +58,18 @@ body {
   color: #ffcc01;
   transition: background-color 200ms ease-in-out;
 }
-.clipboard_icon{
-  width: clamp(52px,2.2rem,2.5vw);
+.clipboard_icon {
+  width: clamp(52px, 2.2rem, 2.5vw);
 }
-.check_list{
+.check_list {
   line-height: 1.5;
   list-style: none;
   font-weight: 600;
   color: #a7a7a7;
-  font-size: clamp(16px,1.5rem,2vw);
+  font-size: clamp(16px, 1.5rem, 2vw);
   user-select: none;
 }
-footer{
+footer {
   height: 60px;
 }
 .social {
@@ -82,7 +80,6 @@ footer{
   align-items: center;
   justify-content: center;
 }
-
 .social a {
   height: 25px;
   width: 25px;
@@ -96,11 +93,9 @@ footer{
   box-shadow: 5px 5px 20px #00000032;
   transition: all 0.2s ease-in-out;
 }
-
 .social a:hover {
   background-color: #8297ba;
 }
-
 .social a:hover::before {
   content: attr(data-text);
   position: absolute;
@@ -115,29 +110,23 @@ footer{
   font-weight: 600;
   border-radius: 4px;
 }
-
 .social .github {
   background-color: #181818;
 }
-
 .social .twitter {
   background-color: #1da1f2;
 }
-
 .social .coffee {
   background-color: #ffdd00;
 }
-
 .social .coffee img {
   height: 30px;
 }
-
 .social a svg {
   fill: #fff;
   transition: transform 200ms ease-in-out;
   z-index: 2;
 }
-
 .social a:hover svg {
   transform: scale(1.1);
 }
